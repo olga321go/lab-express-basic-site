@@ -3,9 +3,14 @@ const app = express()
 const port = 3000
 
 
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "public"));
+
 
 app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/views/html/home.html");
+});
+
+app.get("/homeCss", (req, res) => {
   res.sendFile(__dirname + "/views/html/home.html");
 });
 
