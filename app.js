@@ -5,9 +5,16 @@ const port = 3000
 
 app.use(express.static(__dirname + "/public"));
 
+<<<<<<< Updated upstream
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/html/home.html");
 });
+=======
+
+// app.get("/", (req, res) => {
+//   res.sendFile(__dirname + "/views/html/home.html");
+// });
+>>>>>>> Stashed changes
 
 app.get("/about", (req, res) => {
     res.sendFile(__dirname + "/views/html/about.html");
